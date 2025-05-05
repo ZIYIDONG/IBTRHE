@@ -1,0 +1,17 @@
+﻿cl : 命令行  warning D9035: “Gm”选项已否决，并将在将来的版本中移除
+  pemain.cpp
+C:\Users\ZiyiDong\Desktop\code_add_enc_sign\ecn.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“pemain.cpp”)
+  
+C:\Users\ZiyiDong\Desktop\code_add_enc_sign\zzn2.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“pemain.cpp”)
+  
+C:\Users\ZiyiDong\Desktop\code_add_enc_sign\pemain.cpp(1075,22): warning C4244: “=”: 从“clock_t”转换到“float”，可能丢失数据
+C:\Users\ZiyiDong\Desktop\code_add_enc_sign\pemain.cpp(790,21): warning C4101: “y2”: 未引用的局部变量
+C:\Users\ZiyiDong\Desktop\code_add_enc_sign\pemain.cpp(790,13): warning C4101: “y1”: 未引用的局部变量
+C:\Users\ZiyiDong\Desktop\code_add_enc_sign\pemain.cpp(790,9): warning C4101: “x1”: 未引用的局部变量
+C:\Users\ZiyiDong\Desktop\code_add_enc_sign\pemain.cpp(792,10): warning C4101: “pad”: 未引用的局部变量
+C:\Users\ZiyiDong\Desktop\code_add_enc_sign\pemain.cpp(787,9): warning C4101: “i”: 未引用的局部变量
+C:\Users\ZiyiDong\Desktop\code_add_enc_sign\pemain.cpp(790,17): warning C4101: “x2”: 未引用的局部变量
+C:\Users\ZiyiDong\Desktop\code_add_enc_sign\pemain.cpp(787,12): warning C4101: “tag”: 未引用的局部变量
+  pe1.vcxproj -> C:\Users\ZiyiDong\Desktop\code_add_enc_sign\Debug\pe1.exe
