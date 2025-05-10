@@ -554,7 +554,7 @@ void Dec(Ciphtertext& CT, PrivateKey& privatekey, TimetrapDoor& st,Big& m1dec, Z
     }
 
 
-
+ 
 	//mdec = CT.c1 * e1 / e3;
 	//cout << "550-mdec" << mdec << endl;
     temp = CT.c1;
@@ -818,6 +818,59 @@ int main()
     Eval(CT1, CT2, CT3);
     Dec(CT3, sk_Bob, st_TimeNow, m3dec, cube, g0, q);
     cout << "861:(m1+m2)dec" << m3dec << endl;
+
+ //   cout << "---------------生成元的负指数运算验证-------------------" << endl;
+ //   Big ra = rand(q);
+	//cout << "r1 = " << ra << endl;
+ //   ECn g = params.P1;
+ //   cout << "g = " << g << endl;
+ //   cout << "g^(-ra) = (-g) ^ ra = " << ra * (-g) << endl;
+ //   cout << "g^(-ra) = -(g ^ ra) = " << -(ra * g) << endl;
+	//cout << "g^(-ra) = g ^ (q - ra) = " << (q - ra) * g << endl;
+ //   cout << "((-g) ^ ra )+ (g ^ ra) = " << (ra * (-g) ) + (ra * g ) << endl;
+
+ //   cout << "---------------ZZn2的负指数运算验证-------------------" << endl;
+ //   ZZn2 e = randn2();
+ //   //Big rrr = q * q -1;
+ //   //cout << "q * q = " << q * q << endl;
+ //   //cout << "q * q - 1 = " << rrr << endl;
+ //   cout << "e = " << e << endl;
+ //   ZZn2 result1, result2, result3, result4, result5;
+ //   result1 = pow(inverse(e), ra);
+ //   result2 = inverse(pow(e, ra));
+ //   //result3 = pow(e, inverse(ra,p));
+ //   result4 = pow(inverse(e), ra) * pow(e, ra);
+ //   result5 = inverse(pow(e, ra)) * pow(e, ra);
+ //   cout << "e^(-ra) = (e^(-1)) ^ ra = " << result1  << endl;
+ //   cout << "e^(-ra) = (e ^ ra) ^ (-1) = " << result2 << endl;
+ //   //cout << "e^(-ra) = e^(-ra) = " << pow(e, -ra) * pow(e, -ra) << endl;
+ //   cout << "((-e) ^ ra) * (e ^ ra) = " << result4 << endl;
+ //   cout << "(-((e) ^ ra)) * (e ^ ra) = " << result5 << endl;
+
+ //   cout << "---------------生成元的(a*b)指数运算验证-------------------" << endl;
+ //   cout << "ra = " << ra << endl;
+ //   Big rb = rand(q);
+	//cout << "rb = " << rb << endl;
+ //   cout << "g = " << g << endl;
+ //   cout << "g^(ab) = g^(ab) = " << (ra * rb) * g << endl;
+ //   cout << "g^(ab) = (g^a)^b = " << ra * (rb * g) << endl;
+
+ //   cout << "---------------1 / (s-H(T)) 运算验证-------------------" << endl;
+ //   Big msk = rand(q);
+	//cout << "msk = " << msk << endl;
+	//cout << "p = " << p << endl;
+ //   char tom[] = "tom";
+	//Big upkk = H1(tom);
+	//cout << "upkk = " << upkk << endl;
+ //   cout << "upkk - msk = " << (upkk - msk) << endl;
+ //   cout << "msk - upkk = " << (msk - upkk) << endl;
+ //   cout << "msk + p - upkk = " << (msk + p - upkk) << endl;
+ //   cout << "msk - upkk % p = " << (msk - upkk ) % p << endl;
+ //   cout << "msk - upkk mod p = " << (msk + p - upkk) % p << endl;
+ //   cout << "msk - upkk + p mod p = " << (msk + p - upkk) % p << endl;
+ //   cout << "test = " << (msk - upkk) + ((msk + p - upkk)) << endl;
+	//cout << " msk - upkk inverse = " << inverse(msk - upkk + p, p) * g << endl;
+ //   cout << " upkk - msk inverse = " << inverse(upkk - msk + p, p) * g << endl;
 
     return 0;
 }
